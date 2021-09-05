@@ -32,7 +32,7 @@
               <span class="archive__type">{{ .Type }}</span>
             {{ end }}
           </span>
-          <a href="{{ .Permalink }}" class="archive__title" data-title-wrap="{{ $titleWrap | default "wrap"}}" data-dir="{{ $.Param "languagedir" | default "ltr" }}">{{ .Title }}</a>        
+          <a href="{{ .Permalink }}" class="archive__title" data-title-wrap="{{ $titleWrap | default "wrap"}}" dir="{{ .Param "languagedir" | default "ltr" }}" data-dir="{{ $.Param "languagedir" | default "ltr" }}">{{ .Title }}</a>        
         </li>
         {{ end }}
       </ul>
